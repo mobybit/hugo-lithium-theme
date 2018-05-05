@@ -1,0 +1,20 @@
+{{$author := .Site.Params.author}}
+
+<section class="author">
+				<h4><a href="/author/{{$author.id}}">{{$author.firstName}} {{$author.lastName}}</a></h4>
+
+				{{if $author.bio}}
+			  	<p>{{$author.bio}}</p>
+				{{else}}
+			  	<p>Read <a href="{{.Site.BaseURL}}">more posts</a> from this site.</p>
+				{{end}}
+
+				<div class="author-meta">
+								{{with $author.location}}
+							  	<span class="author-location icon-location">{{.}}</span>
+								{{end}}
+								{{with $author.website}}
+					   		<span class="author-link icon-link"><a href="{{.}}">{{.}}</a></span>
+								{{end}}
+				</div>
+</section>

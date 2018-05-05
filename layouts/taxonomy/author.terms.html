@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+<main class="content">
+  {{if .Site.Params.author}}
+  {{$author := .Site.Params.author}}
+  <div class="category">
+    <h2 class="category-title">{{ i18n "authors" }}</h2>
+				<ul class="category-item">
+						<li>
+								<a href="{{ $.Site.LanguagePrefix }}/author/{{ $author.id | urlize}}">{{$author.firstName}} {{$author.lastName}}</a>
+      </li>
+				</ul>
+  </div>
+  {{end}}
+</main>
+
+{{ partial "footer.html" . }}

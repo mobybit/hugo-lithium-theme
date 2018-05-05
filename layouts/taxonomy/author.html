@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+
+<main class="content" role="main">
+
+  <div class="list">
+    <h2 class="list-title">{{ .Title }}</h2>
+    {{ range .Paginator.Pages }}
+     
+    {{ partial "list-item.html" . }}
+
+    {{ end }}
+   </div>
+ 
+   {{ partial "pagination.html" . }}
+  
+</main>
+
+{{ partial "footer.html" . }}

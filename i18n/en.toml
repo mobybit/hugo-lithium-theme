@@ -10,5 +10,8 @@ other = "Categories"
 [tags]
 other = "Tags"
 
+[authors]
+other = "Authors"
+
 [errorMessage]
 other = "Here is nothing."
