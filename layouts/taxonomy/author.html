@@ -1,9 +1,9 @@
 {{ partial "header.html" . }}
 
 <main class="content" role="main">
-
+  {{$author := .Site.Params.authors}}
   <div class="list">
-    <h2 class="list-title">{{ .Title }}</h2>
+						<h2 class="list-title">{{ .Title }}</h2>
     {{ range .Paginator.Pages }}
      
     {{ partial "list-item.html" . }}

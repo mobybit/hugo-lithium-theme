@@ -4,7 +4,18 @@
   <article class="article">
     <h1 class="article-title">{{ .Title }}</h1>
     {{ if eq .Section "post" }}
-    <span class="article-date">{{ .Date.Format "2006-01-02" }}</span>
+				<div class="article-header">
+    <span class="article-header">{{ .Date.Format "2006-01-02" }}</span>
+						{{ if .Params.authors }}
+						  - 
+								{{ range $index, $author := .Params.authors }}
+								{{ if gt $index 0 }}
+								{{ end}}
+								<a class="article-header" href="{{ "authors/" | relURL }}{{ . | urlize }}">{{ $author }}
+								</a>
+								{{ end }}
+						{{ end }}
+				</div>
     {{ end }}
 
     <div class="article-content">
@@ -25,10 +36,6 @@
       </li>
       {{ end }}
   </article>
-  
-		<footer class="post-footer">
-				{{ partial "author.html" .}}
-		</footer>
 </main>
 
 {{ partial "footer.html" . }}
