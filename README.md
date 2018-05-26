@@ -1,6 +1,6 @@
-# Hugo Natrium
+# Hugo Chlorine
 
-A simple responsive blog theme for [Hugo](https://gohugo.io/) based on [Natrium](https://github.com/mobybit/hugo-natrium-theme)
+A simple responsive blog theme for [Hugo](https://gohugo.io/) based on [Natrium](https://github.com/mobybit/hugo-natrium-theme).
 
 ## Changes
 
