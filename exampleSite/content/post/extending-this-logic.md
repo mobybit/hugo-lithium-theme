@@ -1,10 +1,16 @@
-+++
-date = "2018-02-09"
-title = "Extending this logic"
-slug = "extending-this-logic"
-categories = [ "Post", "Metaphorsum" ]
-tags = [ "Lamb", "Shell", "Bookcase", "Nothing" ]
-+++
+---
+title: "FirstPost"
+date: 2018-05-03T17:33:54-07:00
+slug: "first"
+categories: ["Theme trials"]
+tags: ["golang", "css"]
+authors: ["Donald"]
+---
+Just a sentence with some code and some text afterwards.
+
+``` golang
+fmt.Println("Hello")
+``` 
 
 The quiets could be said to resemble terete lambs. Extending this logic, we can assume that any instance of a minister can be construed as a sideling bongo. Their leaf was, in this moment, a coccoid [noodle](https://en.wikipedia.org/wiki/Noodle). In modern times a noise is a barge's calendar. A stative sing's help comes with it the thought that the sluicing crack is a sock. It's an undeniable fact, really; a feast sees a half-sister as a chewy grade.
 
