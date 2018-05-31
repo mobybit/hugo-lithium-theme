@@ -24,13 +24,13 @@ h6 {
 pre,
 code {
   font-family: 'Roboto Mono', monospace;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 code {
   border-radius: 3px;
   padding: 1px 3px;
-  background: #f0f0f0;
+  background: #fffee1;
   -webkit-hyphens: none;
   hyphens: none;
 }
