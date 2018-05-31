@@ -25,6 +25,7 @@ pre,
 code {
   font-family: 'Roboto Mono', monospace;
   font-size: 14px;
+  background: #fffee1;
 }
 
 code {
@@ -500,7 +501,7 @@ blockquote {
 
   pre,
   code {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .header {
@@ -516,7 +517,7 @@ blockquote {
   }
 
   .nav-links {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .nav-links li {
@@ -524,34 +525,34 @@ blockquote {
   }
 
   .content {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.8;
     margin: 50px auto auto;
   }
 
   .article-title {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .article-taxonomy {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .list-title,
   .category-title,
 		.author-title,
   .tag-cloud-title {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .list-item-post {
     padding: 5px 0;
-    font-size: 21px;
+    font-size: 19px;
   }
 
   .list-item-date {
     padding: 5px 0;
-    font-size: 17px;
+    font-size: 14px;
     text-align: right;
     float: right;
   }
@@ -561,7 +562,7 @@ blockquote {
   }
 
   .author-item a {
-     font-size: 21px;
+     font-size: 19px;
   }
 
   .category-item {
@@ -569,7 +570,7 @@ blockquote {
   }
 
   .category-item a {
-     font-size: 21px;
+     font-size: 19px;
   }
 
   .footer-links {
@@ -581,7 +582,7 @@ blockquote {
   }
 
   .page-links {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   .error-page-title {
