@@ -33,6 +33,7 @@ pygmentsStyle = "native"
 
 [params]
     description = ""
+    faviconfile   = "images/favicon.ico"
 
     [params.logo]
     url = "logo.png"
