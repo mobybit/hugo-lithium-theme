@@ -27,5 +27,14 @@
 <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
 
+<!-- Favicon -->
+<link rel="shortcut icon"
+{{ if .Site.Params.faviconfile }}
+    href="/{{ .Site.Params.faviconfile }}"
+{{ else }}
+    href="/img/fav.ico"
+{{ end }}
+>
+
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" media="all">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fonts.css">
