@@ -1,5 +1,6 @@
 MIT License
 
+Copyright (c) 2018 Anna Bernardi  
 Copyright (c) 2018 Tim Krieger  
 Copyright (c) 2016 Jonathan Rutheiser (original theme)
 

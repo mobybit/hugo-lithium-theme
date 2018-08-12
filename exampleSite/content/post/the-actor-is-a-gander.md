@@ -1,10 +1,11 @@
-+++
-date = "2018-02-09"
-title = "The actor is a gander"
-slug = "the-actor-is-a-gander"
-categories = [ "Post", "Metaphorsum" ]
-tags = [ "Actor", "Visitor", "Snowflakes", "Interest" ]
-+++
+---
+title: "Third"
+date: 2018-05-03T17:33:54-07:00
+slug: "third"
+categories: ["Theme trials"]
+tags: ["go"]
+authors: ["Donald", "Mickey"]
+---
 
 However, a frostless stop is a stream of the mind. The actor is a gander. A garni person without [gorillas](https://en.wikipedia.org/wiki/Gorilla) is truly a vest of scentless plots.
 

@@ -1,6 +1,15 @@
     <nav class="list-item">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <a class="list-item-post" href="{{ .Permalink }}">{{ .Title }}</a>
       <span class="list-item-date">
-        {{ .Date.Format "2006-01-02" }}
-      </span>
+					  	{{ if .Params.authors }}
+								{{ range $index, $author := .Params.authors }}
+								{{ if gt $index 0 }}
+								{{ end}}
+								<a class="list-item-author" href="{{ "authors/" | relURL }}{{ . | urlize }}">{{ $author }}
+								</a>
+								{{ end }}
+								{{ end }}
+								- 
+								{{ .Date.Format "2006-01-02" }}
+						</span>
     </nav>

@@ -1,7 +1,7 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Natrium Theme"
-theme = "hugo-natrium-theme"
+title = "Chlorine Theme"
+theme = "hugo-chlorine-theme"
 preserveTaxonomyNames = true
 rssLimit = 10
 paginate = 10
@@ -11,6 +11,7 @@ pygmentsStyle = "native"
 [taxonomies]
     category = "categories"  
     tag = "tags"
+    author = "authors"
 
 [permalinks]
     post = "/:slug/"
@@ -31,11 +32,26 @@ pygmentsStyle = "native"
     url = "/categories"
     weight = -130
 
+[[menu.main]]
+    name = "Authors"
+    url = "/authors"
+    weight = -140
+
 [params]
     description = ""
 
     [params.logo]
-    url = "logo.png"
+    url = "clorine.png"
     width = 50
     height = 50
     alt = "Logo"
+
+    [params.authors.mickey]
+    id = "mickey"
+    firstName = "Mickey"
+    lastName = "Mouse"
+
+    [params.authors.donald]
+    id = "donald"
+    firstName = "Donald"
+    lastName = "Duck"

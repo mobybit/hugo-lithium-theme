@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+
+<main class="content">
+
+  <div class="author">
+    <h2 class="author-title">{{ i18n "authors" }}</h2>
+    {{ $data := .Data }}
+    {{ range $key, $value := .Data.Terms.Alphabetical }}
+    <ul class="author-item">
+      <li>
+        <a href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+        <span class="author-item-count">
+          <sup>({{ $value.Count }})</sup>
+       </span>
+      </li>
+    </ul>   
+    {{ end }}
+  </div>
+
+</main>
+
+{{ partial "footer.html" . }}

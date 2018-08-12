@@ -1,0 +1,45 @@
+{{$author := .Site.Params.author}}
+
+{{ partial "header.html" . }}
+<body class="nav-closed">
+  <div class="site-wrapper">
+    {{partial "nav.html" .}}
+    <div class="vertical">
+      <div class="main-header-content inner">
+       {{if $author.thumbnail}}
+         <div class="author-cover-img" style="background-image: url({{$author.thumbnail}})"></div>
+       {{end}}
+       <h1 class="page-title">{{$author.firstName}} {{$author.lastName}}</h1>
+      </div>
+    </div>
+  </div>
+
+  <main class="content" role="main">
+    <article class="post">
+      <section class="post-content">
+        {{.Content}}
+      </section>
+      <h2>Posts</h2>
+        {{range .Site.Pages.GroupByDate "2006" "desc"}}
+        <section class="date-list">
+          <h4>{{.Key}}</h4>
+          <ul>
+            {{range where .Pages "Section" "!=" "author"}}
+            <li>
+              <a href="{{.Permalink}}">{{.Title}}</a> &mdash; {{.Date.Format "Jan 2"}}
+            </li>
+            {{end}}
+          </ul>
+        </section>
+        {{end}}
+      <footer class="post-footer">
+
+      </footer>
+    </article>
+  </main>
+
+    {{partial "footer.html" .}}
+
+  </div>
+
+</body>
