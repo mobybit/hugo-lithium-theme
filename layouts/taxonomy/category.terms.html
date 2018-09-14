@@ -8,12 +8,12 @@
     {{ range $key, $value := .Data.Terms.Alphabetical }}
     <ul class="category-item">
       <li>
-        <a href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+        <a href="{{ $.Site.BaseURL }}/{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a>
         <span class="category-item-count">
           <sup>({{ $value.Count }})</sup>
        </span>
       </li>
-    </ul>   
+    </ul>
     {{ end }}
   </div>
 
