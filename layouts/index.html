@@ -3,7 +3,7 @@
 <main class="content">
 
   <div class="list">
-     {{ range (.Paginate ((where .Data.Pages "Type" "post").GroupByDate "2006")).PageGroups }}    
+     {{ range (.Paginate ((where .Data.Pages "Type" "posts").GroupByDate "2006")).PageGroups }}    
   <h2 class="list-title">{{ .Key }}</h2>
     {{ range .Pages }}
     
