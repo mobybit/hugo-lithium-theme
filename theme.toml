@@ -5,7 +5,7 @@ description = "Natrium minimal theme"
 homepage = "https://github.com/mobybit/hugo-natrium-theme"
 tags = ["blog", "minimal", "personal", "responsive"]
 features = ["blog", "taxonomies", "privacy"]
-min_version = 0.25
+min_version = 0.57
 
 [author]
   name = "Tim Krieger"
