@@ -4,16 +4,21 @@ title = "Natrium Theme"
 theme = "hugo-natrium-theme"
 preserveTaxonomyNames = true
 rssLimit = 10
-paginate = 10
+paginate = 2
 pygmentsCodefences = true
 pygmentsStyle = "native"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [taxonomies]
     category = "categories"  
     tag = "tags"
 
 [permalinks]
-    post = "/:slug/"
+    post = "/post/:slug/"
     page = "/:slug/"
 
 [[menu.main]]
