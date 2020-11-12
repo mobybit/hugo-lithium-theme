@@ -2,14 +2,22 @@
 This is a simple, responsive blog theme for [Hugo](https://gohugo.io/) based on [Lithium](https://github.com/jrutheiser/hugo-lithium-theme.git). [Hugo Natrium](https://github.com/mobybit/hugo-natrium-theme) was created by Tim ([mobybit](https://github.com/mobybit)). This fork of the theme is actively maintained (for new Hugo version compatibility) by myself.
 
 ## Changes
-Changes have been introduced to make this theme compatible with the latest Hugo versions (0.53 and newer). **These changes break the theme under older Hugo versions (0.52 and prior).** Upgrading to at least Hugo 0.53 is required to maintain functionality. The changes include:
+Changes have been introduced to make this theme compatible with the latest Hugo versions (0.53 and newer).
+
+```diff
+-These changes break the theme in older Hugo versions (0.52 and prior).
+```
+**Upgrading to at least Hugo 0.53 is required to maintain functionality.** The changes include:
 
 * Replace instances of *.URL* with *.RelPermalink* (fixes "*WARN Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink.*")
 * Replace instances of *.Hugo* with *hugo* (fixes "*WARN Page.Hugo is deprecated and will be removed in a future release. Use the global hugo function.*")
 * Replace instances of *.RSSLink* with *.OutputFormats.Get "RSS"* (fixes: "*WARN Page.RSSLink is deprecated and will be removed in a future release. Use the Output Format's link.*")
 * Replace instances of *.Data.Pages* with *.Site.RegularPages* (fixes "*Error <.Paginate>: error calling Paginate: cannot convert type page.PagesGroup to Pages*")
 
-**To use Natrium with older versions of Hugo (0.25 - 0.52), use the previous commit ([c0906c9ec0878985af4cd86b0b083c5b8f1f78df](https://github.com/mobybit/hugo-natrium-theme/tree/c0906c9ec0878985af4cd86b0b083c5b8f1f78df)).**
+```diff
+-To use Natrium with older versions of Hugo (0.25 - 0.52), use the previous commit from mobybit
+```
+Commit: ([c0906c9ec0878985af4cd86b0b083c5b8f1f78df](https://github.com/mobybit/hugo-natrium-theme/tree/c0906c9ec0878985af4cd86b0b083c5b8f1f78df))
 
 Natrium includes: taxonomies (categories, tags), static footer, new fonts (Roboto Mono, Font Awesome), local fonts, syntax highlighting, better support for code, img and RSS, pagination, multiple design optimizations, i18n, 404.html...
 
