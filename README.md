@@ -20,11 +20,12 @@ Changes have been introduced to make this theme compatible with the latest Hugo 
 ```
 Commit: ([c0906c9ec0878985af4cd86b0b083c5b8f1f78df](https://github.com/mobybit/hugo-natrium-theme/tree/c0906c9ec0878985af4cd86b0b083c5b8f1f78df))
 
-Natrium includes: taxonomies (categories, tags), static footer, new fonts (Roboto Mono, Font Awesome), local fonts, syntax highlighting, better support for code, img and RSS, pagination, multiple design optimizations, i18n, 404.html...
+Natrium includes: taxonomies (categories, tags), static footer, new fonts (Roboto Mono, Font Awesome), local fonts, comments (Disqus), syntax highlighting, better support for code, img and RSS, pagination, multiple design optimizations, i18n, 404.html...
 
 
 ## Features
 - Blog
+- Disqus (comments)
 - Responsive
 - Privacy (no Google)
 - Taxonomies
@@ -43,8 +44,8 @@ $ git clone https://github.com/mobybit/hugo-natrium-theme
 
 
 ## Configuration
-Take a look at the sample [config.toml](https://github.com/mobybit/hugo-natrium-theme/blob/master/exampleSite/config.toml)
-file located in the [exampleSite](https://github.com/mobybit/hugo-natrium-theme/blob/master/exampleSite) folder.
+Take a look at the sample [config.toml](https://github.com/neil-sabol/hugo-natrium-theme/blob/master/exampleSite/config.toml)
+file located in the [exampleSite](https://github.com/neil-sabol/hugo-natrium-theme/blob/master/exampleSite) folder.
 
 
 ## Content Types
