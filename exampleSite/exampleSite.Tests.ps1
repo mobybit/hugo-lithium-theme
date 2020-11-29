@@ -117,6 +117,14 @@ Describe 'Hugo Natrium Theme' {
             "$currentPath\public\tags\visitor\index.html" | Should -Exist
         }
     }
+    Context "Disqus" {
+        It "Should render the Disqus code block on a post" {
+            Get-Content "$currentPath\public\post\the-actor-is-a-gander\index.html" -Raw | Should -BeLike "*s.src = 'https://example.disqus.com/embed.js'*"
+        }
+        It "Should NOT render the Disqus code block on the about page" {
+            Get-Content "$currentPath\public\about\index.html" -Raw | Should -Not -BeLike "*s.src = 'https://example.disqus.com/embed.js'*"
+        }
+    }
     Context "Content validation" {
         It "Should contain the correct Hugo version (generator) on each page" {
             Get-ChildItem -Path "$currentPath\public" -Recurse | where { $_.Name -like "*.html" -or $_.Name -like "*.xml" } | Get-Content | Where-Object { $_ -like "*<meta name=""generator"" content=""Hugo $expectedVersionShort"" />*" } | Measure-Object | select -ExpandProperty Count | Should -Be $expectedPageswithHugoVersion
@@ -169,6 +177,12 @@ Describe 'Hugo Natrium Theme' {
         }
         It "Should render static content to the root folder" {
             "$currentPath\public\.gitkeep" | Should -Exist
+        }
+        It "Should render a correct link rel='alternate' tag to a category page" {
+            Get-Content "$currentPath\public\categories\post\index.html" -Raw | Should -BeLike '*<link rel="alternate" type="application/rss+xml" href="https://example.org/categories/post/index.xml" title="Natrium Theme" />*'
+        }
+        It "Should render a correct link rel='alternate' tag to a tag page" {
+            Get-Content "$currentPath\public\tags\shell\index.html" -Raw | Should -BeLike '*<link rel="alternate" type="application/rss+xml" href="https://example.org/tags/shell/index.xml" title="Natrium Theme" />*'
         }
     }
     AfterAll {
