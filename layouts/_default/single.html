@@ -25,11 +25,11 @@
       </li>
       {{ end }}
   </article>
-  {{ if eq .RelPermalink "/about/" }}
-
-  {{ else }}
-    {{ if .Site.DisqusShortname }}
-      <div id="disqus_thread" style="width:95%;margin:2% auto"></div>
+  {{ if .Site.DisqusShortname }}
+    {{ if eq .RelPermalink "/about/" }}
+        <!-- Do not render Disqus on the About page -->
+    {{ else }}
+        <div id="disqus_thread" style="width:95%;margin:2% auto"></div>
         <script>
 		var disqus_config = function () {
 			this.page.url = '{{ .Permalink }}';
@@ -42,8 +42,8 @@
 		})();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                            
-      </div>
-    {{ end }}  
+        </div>
+    {{ end }}
   {{ end }}
 </main>
 
