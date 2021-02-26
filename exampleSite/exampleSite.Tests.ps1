@@ -10,7 +10,10 @@ $script:currentPath = (Split-Path -Parent $MyInvocation.MyCommand.Path)
 
 # Define test parameters (expected results)
 $script:expectedVersionFull = Invoke-Command {hugo version}
+# Try Hugo 0.81.0 and later version string format
 $script:expectedVersionShort = $expectedVersionFull.Split("-")[0].Replace("hugo v","")
+# Try Hugo prior to 0.81.0 version string format (fall through from replace above)
+$script:expectedVersionShort = $expectedVersionShort.Split("-")[0].Replace("Hugo Static Site Generator v","")
 $script:expectedFileandFolderCount = 140
 $script:expectedPostsAll = 3
 $script:expectedPostsonFirstPage = 2
