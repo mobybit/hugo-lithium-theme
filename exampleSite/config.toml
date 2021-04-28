@@ -4,16 +4,29 @@ title = "Natrium Theme"
 theme = "hugo-natrium-theme"
 preserveTaxonomyNames = true
 rssLimit = 10
-paginate = 10
+paginate = 2
 pygmentsCodefences = true
 pygmentsStyle = "native"
+
+# Set your shortname (replacing "example") to use Disqus for comments
+# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+# Comment or delete the line to disable Disqus
+disqusShortname = "example"
+
+# As of Hugo 0.60.0, Goldmark by @yuin is the default library used for
+# Markdown in Hugo. If you have inline HTML in your Markdown files,
+# enable unsafe mode.
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [taxonomies]
     category = "categories"  
     tag = "tags"
 
 [permalinks]
-    post = "/:slug/"
+    post = "/post/:slug/"
     page = "/:slug/"
 
 [[menu.main]]
